@@ -37,9 +37,9 @@ jobs:
           
             #Now we have got the access of EC2 and we will start the deploy .
             cd /home/ubuntu/Aws-service &&
-            git checkout master &&
+            git checkout ${{ secrets.BRANCH_NAME  }} &&
             git fetch --all &&
-            git reset --hard origin/master &&
-            git pull origin master &&
-            docker-compose up -d --build
+            git reset --hard origin/${{ secrets.BRANCH_NAME  }} &&
+            git pull origin ${{ secrets.BRANCH_NAME  }} &&
+            sudo docker-compose up -d --build
             '
