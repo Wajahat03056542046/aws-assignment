@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, render_template
 app = Flask(__name__)
-app.config["IMAGE_UPLOADS"] = "/home/asad/projects/aws-assignment/services/media"
+app.config["IMAGE_UPLOADS"] = "/home/wajahat/aws-assignment/services/media"
 
 
 @app.route("/home")
