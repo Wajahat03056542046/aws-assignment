@@ -6,7 +6,7 @@ on:
       - 'master'
   pull:
     branches:
-      - 'test'
+      - 'master'
 
 jobs:
   unit-test:
